@@ -1,0 +1,115 @@
+@import '../settings/settings-colors.scss';
+
+.get-card__parent {
+    position: relative;
+    max-width: 1000px;
+    padding: 0 80px;
+}
+
+.background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.get-card {
+    margin: 300px auto;
+    background-color: $blue;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 600px;
+    margin: 0 auto;
+
+    label {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 115%;
+        color: $grey;
+    }
+
+    input {
+        width: 600px;
+        height: 24px;
+
+        /* Input/Placeholder */
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        /* or 24px */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+
+        /* Body/Paragraph 10 */
+
+        color: #9EA3BD;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+}
+
+.get-card__info {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 96px 96px 80px;
+
+    h1,
+    p {
+        max-width: 400px;
+        color: $white;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin-left: 36%;
+    }
+
+}
+
+.date-container {
+    input {
+        width: 185px !important;
+        height: 56px !important;
+        margin-right: 15px;
+    }
+}
+
+#sent-request{
+    margin: 58px auto 112px;
+    width: 240px;
+}
+
+.woman, .men{
+    position: absolute;
+}
+
+.men{
+    top: 215px;
+    right: -7px;
+}
+
+.woman{
+    top: 48px;
+    left: -11px;
+}

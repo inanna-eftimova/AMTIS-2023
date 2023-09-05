@@ -1,0 +1,84 @@
+@import '../settings/settings-colors.scss';
+
+.card-workflow {
+    background-color: $green;
+    padding: 96px 190px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.card-workflow__wrap {
+    h1 {
+        font-family: Manrope;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: $white;
+    }
+
+    img {
+        margin-top: 24px;
+    }
+}
+
+.card-elements {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.card-element {
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 48px 32px;
+    gap: 16px;
+    margin-bottom: 23px;
+
+    p {
+        width: 450px;
+        height: 56px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 135%;
+
+        letter-spacing: -0.01em;
+        color: $black;
+    }
+}
+
+.card-element:nth-child(odd) {
+    width: 100%;
+}
+
+.card-element:nth-child(even) {
+    width: 80%;
+    margin-left: 0 auto;
+}
+
+.card-element:nth-child(4) {
+    p {
+        width: 718px;
+        height: 56px;
+    }
+}
+
+.card1, .card2{
+    position: absolute;
+}
+
+.card1{
+    top: 352px;
+    right: 74px;
+}
+.card2{
+    top: 111px;
+    right: 146px;
+}

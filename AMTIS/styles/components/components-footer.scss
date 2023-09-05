@@ -1,0 +1,30 @@
+@import '../settings/settings-colors.scss';
+
+.footer{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: $white;
+    margin-top: 96px;
+
+    img{
+        display: block;
+        margin: 0px auto;
+        padding: 50px 0;
+    }
+}
+
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+
+    li{
+        list-style-type: none;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
